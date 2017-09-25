@@ -1,4 +1,3 @@
-# Code from
 def say_hello():
     # block belonging to the function
     print('hello world')
