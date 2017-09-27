@@ -1,18 +1,15 @@
+# -*- coding: utf-8 -*-
 def say_hello():
     # block belonging to the function
     print('hello world')
 
-# End of function
-say_hello() # call the function
-say_hello() # call the function again
-
 def print_max(a, b):
      if a > b:
-         print(a, 'is maximum')
+         print a, 'is maximum'
      elif a == b:
-         print(a, 'is equal to', b)
+         print a, 'is equal to', b
      else:
-         print(b, 'is maximum')
+         print b, 'is maximum'
 
 def maximum(x, y):
      if x > y:
