@@ -10,12 +10,13 @@ print "Once entered the program will return the average value for the list"
 
 while not numFlg: # Changed "while numFlg == False" to "while not numFlg"
     print "Please enter the next number or type 'q' to stop"
-    num = str(raw_input("The entry must be a number "))
+    num = str(raw_input("The entry must be a number ")) # Make sure it's a string
 
     try:
         num = eval(num)
         myList.append(num)
-        running_Total += num
+        running_Total += num #Changed running_Total = running_Total + num to
+                             # running_Total += num
     except:
         if string.upper(num) == "Q" and len(myList) > 0:
             average = float(running_Total)/len(myList)
