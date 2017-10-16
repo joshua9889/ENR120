@@ -39,10 +39,11 @@ print repr("Temperature").rjust(0),
 print repr("Wind Speed").rjust(0),
 print repr("Wind Chill").rjust(0)
 
-# Calculate and print values
 for i in range(0, 20, 2):
-    localWindSpeed = userWindSpeedMph+i
-    windChill = round(calculateWindChill(userDegF, localWindSpeed), 1)
+    localWindSpeed = userWindSpeedMph+i # Get wind speed to calculate
+    windChill = round(calculateWindChill(userDegF, localWindSpeed), 1) # Calculate wind chill to one degree
+
+    # Print the values
     print repr(userDegF).rjust(7),
     print repr(localWindSpeed).rjust(13),
     print repr(windChill).rjust(13)
