@@ -11,7 +11,7 @@ def calculateWindChill(F, mph):
     return wind_chill
 
 # Var defs
-userDegF = 0 
+userDegF = 0
 userWindSpeedMph = 0
 
 while True: # Get a valid input
@@ -43,8 +43,14 @@ for i in range(0, 20, 2):
     localWindSpeed = userWindSpeedMph+i # Get wind speed to calculate
     windChill = round(calculateWindChill(userDegF, localWindSpeed), 1) # Calculate wind chill to one degree
 
-    # Print the values
-    print repr(userDegF).rjust(7),
-    print repr(localWindSpeed).rjust(13),
-    print repr(windChill).rjust(13)
-
+    if windChill <= -18:
+        # Print the values
+        print repr(userDegF).rjust(7),
+        print repr(localWindSpeed).rjust(13),
+        print repr(windChill).rjust(13),
+        print repr("Frostbite warning").rjust(25)
+    else:
+        # Print the values
+        print repr(userDegF).rjust(7),
+        print repr(localWindSpeed).rjust(13),
+        print repr(windChill).rjust(13)

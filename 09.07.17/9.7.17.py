@@ -16,7 +16,7 @@ while(True):
         break
     except:
         logging.warning("Please enter a number!!!")
-    
+
 print t
 
 my_first_number = input('Please enter a number: ')
@@ -26,4 +26,3 @@ my_answer = ((my_first_number**2)+(my_second_number**3))**(1./my_third_number)
 print 'Answer = ' + str(my_answer)
 
 #do a calculation
-
