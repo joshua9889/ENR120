@@ -28,7 +28,7 @@ def roundup(num):
     if remainder > 0.5: # Greater then
         outputNum += 1
     elif remainder < 0.5: # Less then
-        outputNun = outputNum
+        outputNum = outputNum
     else: # Equal
         if outputNum%2 == 1:
             outputNum -= 1
