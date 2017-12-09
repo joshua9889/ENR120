@@ -42,6 +42,7 @@ def isLetterInWord(letter):
             inLetter = True
     return inLetter
 
+
 def isWordInWord(word):
     return string.lower(word) == hangWord
 
@@ -50,6 +51,7 @@ def guessSingleLetter(letter):
     global goodGuessMessage
     if isLetterInWord(letter):
         print goodGuessMessage
+
 
 def main():
     importWordList("noun_list.txt")
